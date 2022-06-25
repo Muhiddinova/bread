@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/allOrdersFragment">
 
+    <fragment
+        android:id="@+id/allOrdersFragment"
+        android:name="com.example.asqarnon.main.myOrders.AllOrdersFragment"
+        android:label="AllOrdersFragment" />
+    <fragment
+        android:id="@+id/acceptedFragment"
+        android:name="com.example.asqarnon.main.myOrders.AcceptedFragment"
+        android:label="fragment_accepted"
+        tools:layout="@layout/fragment_accepted" />
+    <fragment
+        android:id="@+id/unconfirmedOrdersFragment"
+        android:name="com.example.asqarnon.main.myOrders.UnconfirmedOrdersFragment"
+        android:label="fragment_unconfirmed_orders"
+        tools:layout="@layout/fragment_unconfirmed_orders" />
+    <fragment
+        android:id="@+id/confirmedOrdersFragment"
+        android:name="com.example.asqarnon.main.myOrders.ConfirmedOrdersFragment"
+        android:label="fragment_confirmed_orders"
+        tools:layout="@layout/fragment_confirmed_orders" />
 </navigation>

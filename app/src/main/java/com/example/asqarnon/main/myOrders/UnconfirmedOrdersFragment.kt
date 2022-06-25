@@ -10,23 +10,16 @@ import com.example.asqarnon.R
 
 class UnconfirmedOrdersFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = UnconfirmedOrdersFragment()
-    }
-
     private lateinit var viewModel: UnconfirmedOrdersViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        viewModel = ViewModelProvider(this)[UnconfirmedOrdersViewModel::class.java]
         return inflater.inflate(R.layout.fragment_unconfirmed_orders, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(UnconfirmedOrdersViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
+
 
 }

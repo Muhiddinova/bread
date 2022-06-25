@@ -20,13 +20,11 @@ class AcceptedFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        viewModel = ViewModelProvider(this).get(AcceptedViewModel::class.java)
         return inflater.inflate(R.layout.fragment_accepted, container, false)
+
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(AcceptedViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
+
 
 }

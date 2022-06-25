@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/splash">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash"
+    app:startDestination="@id/splashFragment">
 
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.example.asqarnon.splash.BreadActivity"
+        android:label="SplashActivity" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.asqarnon.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+    <fragment
+        android:id="@+id/storeRegistrationFragment"
+        android:name="com.example.asqarnon.splash.StoreRegistrationFragment"
+        android:label="fragment_store_registration"
+        tools:layout="@layout/fragment_store_registration" />
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.asqarnon.splash.RegistrationFragment"
+        android:label="RegistrationFragment" />
+    <fragment
+        android:id="@+id/verificationCodeFragment"
+        android:name="com.example.asqarnon.splash.VerificationCodeFragment"
+        android:label="fragment_verification_code"
+        tools:layout="@layout/fragment_verification_code" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.asqarnon.MainActivity"
+        android:label="MainActivity" />
 </navigation>
