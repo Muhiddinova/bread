@@ -15,8 +15,6 @@ import java.util.*
 
 class SplashFragment : Fragment() {
     private lateinit var timer: Timer
-
-
     private lateinit var binding: FragmentSplashBinding
 
 

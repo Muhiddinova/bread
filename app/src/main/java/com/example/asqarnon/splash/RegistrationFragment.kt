@@ -15,7 +15,6 @@ import com.example.asqarnon.databinding.FragmentRegistrationBinding
 class RegistrationFragment : Fragment() {
     private lateinit var binding:FragmentRegistrationBinding
 
-
     private lateinit var viewModel: RegistrationViewModel
 
     override fun onCreateView(

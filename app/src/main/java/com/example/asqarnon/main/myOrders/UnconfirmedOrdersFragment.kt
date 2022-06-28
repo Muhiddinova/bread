@@ -19,7 +19,4 @@ class UnconfirmedOrdersFragment : Fragment() {
         viewModel = ViewModelProvider(this)[UnconfirmedOrdersViewModel::class.java]
         return inflater.inflate(R.layout.fragment_unconfirmed_orders, container, false)
     }
-
-
-
 }
