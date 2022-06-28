@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.myOrders.AcceptedFragment">
+
+    <Button
+        android:id="@+id/btn_all"
+        style="@style/style_btn_tab"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Barcha"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        app:backgroundTint="@null"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_no_confirm"
+        style="@style/style_btn_tab"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="Tasdiqlanmagan"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        app:backgroundTint="@null"
+        app:layout_constraintLeft_toRightOf="@id/btn_all"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_accepted"
+        style="@style/style_btn_tab"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="Qabul qilingan"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        app:backgroundTint="@null"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_all" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/style_btn_tab"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="Tasdiqlangan"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        app:backgroundTint="@null"
+        app:layout_constraintLeft_toRightOf="@id/btn_accepted"
+        app:layout_constraintTop_toBottomOf="@id/btn_all" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_confirm"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="27dp"
+        tools:listitem="@layout/item_all_paid_orders" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,8 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".splash.RegistrationFragment">
@@ -14,14 +13,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins_medium"
             android:text="@string/reg"
+            android:textColor="@color/black_800"
             android:textSize="19sp"
-            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:textSize="15sp"
             android:id="@+id/edit_reg"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -31,19 +30,23 @@
             android:background="@drawable/bg_btn"
             android:hint="Telefon raqam"
             android:inputType="phone"
+
             android:paddingStart="8dp"
+            android:textSize="15sp"
             app:layout_constraintTop_toBottomOf="@+id/tx_reg" />
 
 
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="match_parent"
             android:id="@+id/btn_send_cod"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16sp"
             android:layout_marginTop="32sp"
             android:layout_marginEnd="16sp"
             android:background="@drawable/bg_btn2"
+            android:fontFamily="@font/poppins_medium"
             android:text="Kod yuborish"
+            android:textColor="@color/black_800"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edit_reg" />

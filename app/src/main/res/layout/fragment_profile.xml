@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edit_store_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16sp"
+            android:background="@drawable/bg_btn"
+            android:text="Baraka market"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black_600"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:textSize="15sp"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/edit_store_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16sp"
+            android:background="@drawable/bg_btn"
+            android:text="Yunusobot 108"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black_600"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/edit_store_name" />
+
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16sp"
+            android:background="@drawable/bg_btn"
+            android:text="+998 97 000 00 00"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black_600"
+            android:inputType="phone"
+            android:paddingStart="8dp"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/edit_store_address" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16sp"
+            android:background="@drawable/bg_btn"
+            android:text="Davlatov Davlat"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black_600"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/edit_phone" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="32sp"
+            android:layout_marginEnd="16sp"
+            android:background="@drawable/bg_btn2"
+            android:text="Saqlash"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

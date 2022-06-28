@@ -13,7 +13,7 @@
         android:id="@+id/acceptedFragment"
         android:name="com.example.asqarnon.main.myOrders.AcceptedFragment"
         android:label="fragment_accepted"
-        tools:layout="@layout/fragment_accepted" />
+        tools:layout="@layout/fragment_paid_orders" />
     <fragment
         android:id="@+id/unconfirmedOrdersFragment"
         android:name="com.example.asqarnon.main.myOrders.UnconfirmedOrdersFragment"
