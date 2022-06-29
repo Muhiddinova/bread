@@ -16,13 +16,17 @@
         <entry key="..\:/Users/User/Bread/app/src/main/res/drawable/ic_launcher_background.xml" value="0.135" />
         <entry key="..\:/Users/User/Bread/app/src/main/res/drawable/ic_menu.xml" value="0.135" />
         <entry key="..\:/Users/User/Bread/app/src/main/res/drawable/ic_notes.xml" value="0.135" />
+        <entry key="..\:/Users/User/Bread/app/src/main/res/drawable/stroke_edittext.xml" value="0.164" />
+        <entry key="..\:/Users/User/Bread/app/src/main/res/drawable/stroke_item_notification.xml" value="0.164" />
         <entry key="..\:/Users/User/Bread/app/src/main/res/layout/activity_main.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/User/Bread/app/src/main/res/layout/activity_splash.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/User/Bread/app/src/main/res/layout/fragment_accepted.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/User/Bread/app/src/main/res/layout/fragment_all_oredrs.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/User/Bread/app/src/main/res/layout/fragment_confirmed_orders.xml" value="0.23802083333333332" />
+        <entry key="..\:/Users/User/Bread/app/src/main/res/layout/fragment_notification.xml" value="0.23697916666666666" />
         <entry key="..\:/Users/User/Bread/app/src/main/res/layout/fragment_paid_orders.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/User/Bread/app/src/main/res/layout/fragment_profile.xml" value="0.23802083333333332" />
+        <entry key="..\:/Users/User/Bread/app/src/main/res/layout/fragment_proposition.xml" value="0.23697916666666666" />
         <entry key="..\:/Users/User/Bread/app/src/main/res/layout/fragment_records_history.xml" value="0.2" />
         <entry key="..\:/Users/User/Bread/app/src/main/res/layout/fragment_registration.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/User/Bread/app/src/main/res/layout/fragment_splash.xml" value="0.23802083333333332" />
@@ -31,6 +35,7 @@
         <entry key="..\:/Users/User/Bread/app/src/main/res/layout/fragment_verification_code.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/User/Bread/app/src/main/res/layout/header.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/User/Bread/app/src/main/res/layout/item_all_orders.xml" value="0.23697916666666666" />
+        <entry key="..\:/Users/User/Bread/app/src/main/res/layout/item_notification.xml" value="0.23697916666666666" />
         <entry key="..\:/Users/User/Bread/app/src/main/res/layout/item_orders.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/User/Bread/app/src/main/res/layout/item_paid_order.xml" value="0.264" />
         <entry key="..\:/Users/User/Bread/app/src/main/res/layout/item_record.xml" value="0.23802083333333332" />
