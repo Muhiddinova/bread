@@ -6,23 +6,23 @@
     android:checkableBehavior="single">
     <item
         android:icon="@drawable/ic_bag"
-        android:id="@+id/nav_home"
+        android:id="@+id/my_orders"
         android:title="Mening buyurtmalarim" />
     <item
         android:icon="@drawable/ic_profile"
-        android:id="@+id/nav_debts"
+        android:id="@+id/profile"
         android:title="Profil" />
     <item
         android:icon="@drawable/ic_notes"
-        android:id="@+id/nav_fees"
+        android:id="@+id/report"
         android:title="Hisobotlar" />
     <item
         android:icon="@drawable/ic_chat"
-        android:id="@+id/nav_qr_cod"
+        android:id="@+id/comment"
         android:title="Takliflar" />
     <item
         android:icon="@drawable/ic_info"
-        android:id="@+id/nav_setting"
+        android:id="@+id/info"
         android:title="Haqida"
         />
 

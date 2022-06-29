@@ -3,25 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    app:startDestination="@id/allOrdersFragment">
+    app:startDestination="@id/acceptedFragment">
 
-    <fragment
-        android:id="@+id/allOrdersFragment"
-        android:name="com.example.asqarnon.main.myOrders.AllOrdersFragment"
-        android:label="AllOrdersFragment" />
+
     <fragment
         android:id="@+id/acceptedFragment"
         android:name="com.example.asqarnon.main.myOrders.AcceptedFragment"
-        android:label="fragment_accepted"
-        tools:layout="@layout/fragment_paid_orders" />
+        android:label="fragment_accepted" />
     <fragment
         android:id="@+id/unconfirmedOrdersFragment"
         android:name="com.example.asqarnon.main.myOrders.UnconfirmedOrdersFragment"
         android:label="fragment_unconfirmed_orders"
         tools:layout="@layout/fragment_unconfirmed_orders" />
     <fragment
-        android:id="@+id/confirmedOrdersFragment"
-        android:name="com.example.asqarnon.main.myOrders.ConfirmedOrdersFragment"
-        android:label="fragment_confirmed_orders"
-        tools:layout="@layout/fragment_confirmed_orders" />
+        android:id="@+id/profileFragment"
+        android:name="com.example.asqarnon.main.profile.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/toPayFragment"
+        android:name="com.example.asqarnon.main.ToPayFragment"
+        android:label="fragment_to_pay"
+        tools:layout="@layout/fragment_to_pay" />
+    <fragment
+        android:id="@+id/propositionFragment"
+        android:name="com.example.asqarnon.main.PropositionFragment"
+        android:label="PropositionFragment" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.asqarnon.main.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+
+
 </navigation>

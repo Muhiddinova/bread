@@ -30,12 +30,12 @@ class MainActivity : AppCompatActivity() {
         }
         binding.navView.setNavigationItemSelectedListener { menu ->
             when (menu.itemId) {
-//                R.id.nav_setting -> navController.navigate(R.id.settingFragment)
-//                R.id.nav_home -> navController.navigate(R.id.homeFragment)
-//                R.id.nav_debts -> navController.navigate(R.id.debtsFragment)
-//                R.id.nav_fees -> navController.navigate(R.id.feesFragment)
-//                R.id.nav_qr_cod -> navController.navigate(R.id.qrCodScannerFragment)
-//                R.id.nav_share -> navController.navigate(R.id.profileFragment)
+                R.id.my_orders -> navController.navigate(R.id.acceptedFragment)
+                R.id.profile -> navController.navigate(R.id.profileFragment)
+//                R.id.report -> navController.navigate(R.id.debtsFragment)
+                R.id.comment -> navController.navigate(R.id.propositionFragment)
+                R.id.info -> navController.navigate(R.id.infoFragment)
+
 
             }
             binding.drawerLayout.closeDrawer(GravityCompat.START)
@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
     override fun onBackPressed() {
 
 
-        if (navController.currentDestination?.id == R.id.allOrdersFragment || navController.currentDestination?.id == R.id.registrationFragment) {
+        if (navController.currentDestination?.id == R.id.acceptedFragment || navController.currentDestination?.id == R.id.registrationFragment) {
             if (lastBackPressed + 2000 >= System.currentTimeMillis()) {
                 finishAffinity()
             } else {
