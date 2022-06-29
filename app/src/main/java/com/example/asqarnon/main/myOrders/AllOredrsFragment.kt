@@ -6,27 +6,57 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
+import androidx.databinding.DataBindingUtil
 import com.example.asqarnon.R
+import com.example.asqarnon.databinding.FragmentAllOredrsBinding
+import com.example.asqarnon.main.model.BreadModel
 
-class AllOredrsFragment : Fragment() {
+class AllOrdersFragment : Fragment(), OrdersAdapter.UserItemListener {
 
-    companion object {
-        fun newInstance() = AllOredrsFragment()
-    }
+    private lateinit var binding: FragmentAllOredrsBinding
 
-    private lateinit var viewModel: AllOredrsViewModel
+    private lateinit var viewModel: AllOrdersViewModel
+    private lateinit var adapter: OrdersAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_all_oredrs, container, false)
+    ): View {
+
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_all_oredrs, container, false)
+        viewModel = ViewModelProvider(this)[AllOrdersViewModel::class.java]
+
+        return binding.root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(AllOredrsViewModel::class.java)
-        // TODO: Use the ViewModel
+    override fun onResume() {
+        super.onResume()
+        setRv()
+    }
+
+    private fun setRv() {
+        getList()
+        adapter = OrdersAdapter(this)
+        binding.rvBread.adapter = adapter
+
+    }
+    private fun getList():List<BreadModel>{
+        return listOf(
+
+            BreadModel("Patir","3500 so'm",context?.let { ContextCompat.getDrawable(it, R.drawable.bread_1) }!!,"Tandirdan uzilgan issiqqina , sedanali patir non"),
+            BreadModel("Patir","3500 so'm",context?.let { ContextCompat.getDrawable(it, R.drawable.bread_1) }!!,"Tandirdan uzilgan issiqqina , sedanali patir non"),
+            BreadModel("Patir","3500 so'm",context?.let { ContextCompat.getDrawable(it, R.drawable.bread_1) }!!,"Tandirdan uzilgan issiqqina , sedanali patir non"),
+            BreadModel("Patir","3500 so'm",context?.let { ContextCompat.getDrawable(it, R.drawable.bread_1) }!!,"Tandirdan uzilgan issiqqina , sedanali patir non"),
+            BreadModel("Patir","3500 so'm",context?.let { ContextCompat.getDrawable(it, R.drawable.bread_1) }!!,"Tandirdan uzilgan issiqqina , sedanali patir non"),
+            BreadModel("Patir","3500 so'm",context?.let { ContextCompat.getDrawable(it, R.drawable.bread_1) }!!,"Tandirdan uzilgan issiqqina , sedanali patir non"),
+
+        )
+
+    }
+
+    override fun onClick(user: BreadModel) {
+        TODO("Not yet implemented")
     }
 
 }

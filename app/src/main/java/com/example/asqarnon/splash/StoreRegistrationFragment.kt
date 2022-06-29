@@ -6,27 +6,29 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 import com.example.asqarnon.R
+import com.example.asqarnon.databinding.FragmentStoreRegistrationBinding
 
 class StoreRegistrationFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = StoreRegistrationFragment()
-    }
-
+    private lateinit var binding:FragmentStoreRegistrationBinding
     private lateinit var viewModel: StoreRegistrationViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_store_registration, container, false)
+    ): View {
+
+        binding=DataBindingUtil.inflate(inflater,R.layout.fragment_store_registration, container, false)
+        viewModel = ViewModelProvider(this).get(StoreRegistrationViewModel::class.java)
+        binding.btnReg.setOnClickListener {
+            findNavController().navigate(R.id.mainActivity)
+        }
+        return binding.root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(StoreRegistrationViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
+
 
 }

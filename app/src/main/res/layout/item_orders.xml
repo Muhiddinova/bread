@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="bread"
+            type="com.example.asqarnon.main.model.BreadModel" />
+    </data>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="horizontal"
@@ -9,7 +16,7 @@
     <ImageView
         android:layout_weight="6"
         android:layout_marginStart="16dp"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/bread_1"
         android:layout_width="0dp"
         android:layout_height="88dp"
         android:id="@+id/img_bread"
@@ -22,6 +29,7 @@
         android:orientation="vertical"
         >
         <TextView
+            android:id="@+id/bread_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Patir"
@@ -55,6 +63,7 @@
         android:layout_height="88sp"
         />
     <ImageView
+        android:id="@+id/add"
         android:layout_marginTop="32dp"
         android:layout_weight="3.8"
         android:src="@drawable/ic_add"
@@ -64,3 +73,4 @@
         />
 
 </LinearLayout>
+</layout>
