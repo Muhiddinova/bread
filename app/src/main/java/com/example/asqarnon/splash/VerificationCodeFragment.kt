@@ -20,11 +20,10 @@ class VerificationCodeFragment : Fragment() {
     ): View? {
 
         binding=DataBindingUtil.inflate(inflater,R.layout.fragment_verification_code, container, false)
-//        binding.btnSendCod.setOnClickListener {
-//            findNavController().navigate(R.id.storeRegistrationFragment)
-//        }
+        binding.btnSendCod.setOnClickListener {
+            findNavController().navigate(R.id.storeRegistrationFragment)
+        }
       return  binding.root
     }
-
 
 }

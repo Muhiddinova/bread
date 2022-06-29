@@ -21,7 +21,7 @@ class AcceptedFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         viewModel = ViewModelProvider(this).get(AcceptedViewModel::class.java)
-        return inflater.inflate(R.layout.fragment_accepted, container, false)
+        return inflater.inflate(R.layout.fragment_paid_orders, container, false)
 
     }
 
