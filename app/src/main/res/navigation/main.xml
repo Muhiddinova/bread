@@ -33,6 +33,10 @@
         android:name="com.example.asqarnon.main.InfoFragment"
         android:label="fragment_info"
         tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.asqarnon.main.ReportFragment"
+        android:label="ReportFragment" />
 
 
 </navigation>

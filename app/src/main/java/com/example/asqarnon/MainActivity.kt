@@ -12,7 +12,7 @@ import com.example.asqarnon.databinding.ActivityMainBinding
 import com.example.asqarnon.databinding.HeaderBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding:ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
     private var lastBackPressed: Long = 0
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
+
         val navHost = supportFragmentManager.findFragmentById(R.id.container) as NavHostFragment
         navController = navHost.navController
         navController = navHost.findNavController()
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             when (menu.itemId) {
                 R.id.my_orders -> navController.navigate(R.id.acceptedFragment)
                 R.id.profile -> navController.navigate(R.id.profileFragment)
-//                R.id.report -> navController.navigate(R.id.debtsFragment)
+                R.id.report -> navController.navigate(R.id.reportFragment)
                 R.id.comment -> navController.navigate(R.id.propositionFragment)
                 R.id.info -> navController.navigate(R.id.infoFragment)
 
@@ -43,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-
+        setUp()
     }
 
 
@@ -64,4 +65,17 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    private fun setUp() {
+        navController.addOnDestinationChangedListener { _, desination, _ ->
+            when (desination.id) {
+                R.id.infoFragment -> title = "Haqida"
+                R.id.acceptedFragment -> title = "Menig buyurtmalarim"
+                R.id.profileFragment -> title= "Profil"
+                R.id.reportFragment-> title= "Hisobotlar"
+                R.id.propositionFragment -> title = "Takliflar"
+
+            }
+
+        }
     }
+}
