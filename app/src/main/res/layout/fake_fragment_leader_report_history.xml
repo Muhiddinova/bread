@@ -6,15 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".main.leader.DailyOrdersFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cl_"
+    <LinearLayout
+        android:id="@+id/line_btn_paid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/shape_leader_income_out"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_paid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="2"
+            android:background="@drawable/bg_btn_tab_clickable"
+            android:fontFamily="@font/poppins_regular"
+            android:text="To'lov qilingan"
+            android:textAllCaps="false"
+            android:textColor="@color/black_800"
+            android:textSize="15dp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn_not_paid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="2"
+            android:background="@drawable/bg_btn_tab"
+            android:fontFamily="@font/poppins_regular"
+            android:text="To'lov qilinmagan"
+            android:textAllCaps="false"
+            android:textColor="@color/black_800"
+            android:textSize="15dp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn_debt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:background="@drawable/bg_btn_tab"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Tasdqil"
+            android:textAllCaps="false"
+            android:textColor="@color/black_800"
+            android:textSize="15dp"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+
 
         <LinearLayout
             android:id="@+id/line_date"
@@ -23,12 +68,13 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:background="@drawable/stroke_leader_main"
+            android:background="@drawable/bg_btn"
             android:orientation="horizontal"
             android:padding="16dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@id/line_btn_paid"
+    >
 
             <TextView
                 android:id="@+id/tx_from_date"
@@ -72,84 +118,6 @@
         </LinearLayout>
 
 
-        <TextView
-            android:id="@+id/tx_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/poppins_regular"
-            android:text="Kunlik buyurtmalar"
-            android:textColor="@color/black_600"
-            android:textSize="15sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/line_date" />
-
-        <TextView
-            android:id="@+id/tx_count_orders"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:fontFamily="@font/poppins_medium"
-            android:text="10 ta"
-            android:textColor="@color/black_800"
-            android:textSize="15sp"
-            app:layout_constraintLeft_toRightOf="@id/tx_1"
-            app:layout_constraintTop_toTopOf="@id/tx_1" />
-
-        <TextView
-            android:id="@+id/tx_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/poppins_regular"
-            android:text="Non"
-            android:textColor="@color/black_600"
-            android:textSize="15sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tx_1" />
-
-        <TextView
-            android:id="@+id/tx_count_bread"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/poppins_medium"
-            android:text="700 ta"
-            android:textColor="@color/black_800"
-            android:textSize="15sp"
-            app:layout_constraintLeft_toRightOf="@id/tx_2"
-            app:layout_constraintTop_toTopOf="@id/tx_2" />
-
-        <TextView
-            android:id="@+id/tx_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/poppins_regular"
-            android:text="Umumiy tushum"
-            android:textColor="@color/black_600"
-            android:textSize="15sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tx_2" />
-
-        <TextView
-            android:id="@+id/tx_money"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/poppins_medium"
-            android:text="250 000 000 so'm"
-            android:textColor="@color/black_800"
-            android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toRightOf="@id/tx_3"
-            app:layout_constraintTop_toTopOf="@id/tx_3" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
         android:id="@+id/line_1"
@@ -159,7 +127,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/cl_">
+        app:layout_constraintTop_toBottomOf="@id/line_date">
 
         <TextView
             android:id="@+id/tx_shop"
@@ -193,12 +161,13 @@
             android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/tx_d"
+            android:id="@+id/tx_money"
             android:layout_width="0dp"
+            android:textAlignment="center"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/poppins_regular"
-            android:text="Vaqti"
+            android:text="narxi, so\'m"
             android:textColor="@color/black_600"
             android:textSize="15sp" />
     </LinearLayout>
@@ -210,12 +179,69 @@
         android:background="@color/black_100"
         app:layout_constraintTop_toBottomOf="@id/line_1" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <include
+        android:id="@+id/inc1"
+        layout="@layout/item_leader_order_history"
         app:layout_constraintTop_toBottomOf="@id/line_1"
-        tools:listitem="@layout/item_leader_order" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc2"
+        layout="@layout/item_leader_order_history"
+        app:layout_constraintTop_toBottomOf="@id/inc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc3"
+        layout="@layout/item_leader_order_history"
+        app:layout_constraintTop_toBottomOf="@id/inc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc4"
+        layout="@layout/item_leader_order_history"
+        app:layout_constraintTop_toBottomOf="@id/inc3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc5"
+        layout="@layout/item_leader_order_history"
+        app:layout_constraintTop_toBottomOf="@id/inc4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc6"
+        layout="@layout/item_leader_order_history"
+        app:layout_constraintTop_toBottomOf="@id/inc5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc7"
+        layout="@layout/item_leader_order_history"
+        app:layout_constraintTop_toBottomOf="@id/inc6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc8"
+        layout="@layout/item_leader_order_history"
+        app:layout_constraintTop_toBottomOf="@id/inc7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

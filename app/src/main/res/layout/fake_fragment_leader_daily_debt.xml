@@ -16,60 +16,19 @@
         android:background="@drawable/shape_leader_income_out"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:id="@+id/line_date"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tx_date"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/stroke_leader_main"
-            android:orientation="horizontal"
-            android:padding="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Bugun 2.05.2022"
+            android:textColor="@color/black_600"
+            android:textSize="10sp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/tx_from_date"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/poppins_regular"
-                android:text="2.05.2022"
-                android:textColor="@color/black_600"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="16dp"
-                android:src="@drawable/ic_notes" />
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="@color/black_100" />
-
-            <TextView
-                android:id="@+id/tx_to_date"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/poppins_regular"
-                android:text="2.05.2022"
-                android:textColor="@color/black_600"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/ic_notes" />
-        </LinearLayout>
         <TextView
             android:id="@+id/tx_1"
             android:layout_width="wrap_content"
@@ -77,11 +36,11 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/poppins_regular"
-            android:text="Umumiy qarz: "
+            android:text="Kunlik qarz: "
             android:textColor="@color/black_600"
             android:textSize="15sp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/line_date" />
+            app:layout_constraintTop_toBottomOf="@id/tx_date" />
 
         <TextView
             android:id="@+id/tx_income_money"
@@ -151,12 +110,84 @@
         android:background="@color/black_100"
         app:layout_constraintTop_toBottomOf="@id/line_1" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <include
+        android:id="@+id/inc1"
+        layout="@layout/item_leader_income"
         app:layout_constraintTop_toBottomOf="@id/line_1"
-        tools:listitem="@layout/item_leader_income" />
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc2"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc3"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc4"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc5"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc6"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc7"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc8"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc9"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc10"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

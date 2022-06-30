@@ -35,7 +35,7 @@ class DebtFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_leader_debt, container, false)
+        return inflater.inflate(R.layout.fake_fragment_leader_debt, container, false)
     }
 
     companion object {

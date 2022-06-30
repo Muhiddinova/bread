@@ -70,6 +70,8 @@
                 android:layout_marginEnd="8dp"
                 android:src="@drawable/ic_notes" />
         </LinearLayout>
+
+
         <TextView
             android:id="@+id/tx_1"
             android:layout_width="wrap_content"
@@ -77,7 +79,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/poppins_regular"
-            android:text="Umumiy qarz: "
+            android:text="Umumiy kirim: "
             android:textColor="@color/black_600"
             android:textSize="15sp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -137,7 +139,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/poppins_regular"
-            android:text="Qarz, so\'m"
+            android:text="Kirim, so\'m"
             android:textAlignment="center"
             android:textColor="@color/black_600"
             android:textSize="15sp" />
@@ -151,12 +153,85 @@
         android:background="@color/black_100"
         app:layout_constraintTop_toBottomOf="@id/line_1" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <include
+        android:id="@+id/inc1"
+        layout="@layout/item_leader_income"
         app:layout_constraintTop_toBottomOf="@id/line_1"
-        tools:listitem="@layout/item_leader_income" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc2"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc3"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc4"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc5"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc6"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc7"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc8"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc9"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+    <include
+        android:id="@+id/inc10"
+        layout="@layout/item_leader_income"
+        app:layout_constraintTop_toBottomOf="@id/inc9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

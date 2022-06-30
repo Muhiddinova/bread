@@ -35,7 +35,7 @@ class DailyIncomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_leader_daily_income, container, false)
+        return inflater.inflate(R.layout.fake_fragment_leader_daily_income, container, false)
     }
 
     companion object {

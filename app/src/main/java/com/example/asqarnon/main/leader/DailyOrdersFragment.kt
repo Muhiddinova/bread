@@ -12,7 +12,7 @@ import com.example.asqarnon.R
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class DailyOredersFragment : Fragment() {
+class DailyOrdersFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -30,7 +30,7 @@ class DailyOredersFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_leader_daily_orders, container, false)
+        return inflater.inflate(R.layout.fake_fragment_leader_daily_orders, container, false)
     }
 
     companion object {
@@ -38,7 +38,7 @@ class DailyOredersFragment : Fragment() {
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            DailyOredersFragment().apply {
+            DailyOrdersFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main.leader.DailyOredersFragment">
+    tools:context=".main.leader.DailyOrdersFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_"
@@ -33,7 +33,7 @@
             <TextView
                 android:id="@+id/tx_from_date"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_regular"
                 android:text="2.05.2022"
@@ -55,7 +55,7 @@
             <TextView
                 android:id="@+id/tx_to_date"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_regular"
